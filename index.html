@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RD Abro Legal LLC | Tax Controversy & Digital Assets | Chicago</title>
+<meta name="description" content="Rita D. Abro is a Chicago tax controversy attorney focusing on digital asset and cryptocurrency IRS enforcement. Michigan Law. Latham & Watkins. Baker & McKenzie. Thompson Coburn. Seyfarth Shaw.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0f1f3d;
+    --navy-mid: #1a2f52;
+    --gold: #b8922a;
+    --gold-light: #d4aa4a;
+    --cream: #f8f5ef;
+    --warm-white: #fdfcf9;
+    --text: #1a1a1a;
+    --muted: #6b6b6b;
+    --border: #e0d8cc;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--warm-white);
+    color: var(--text);
+    overflow-x: hidden;
+  }
+
+  /* ── NAVIGATION ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(15, 31, 61, 0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(184, 146, 42, 0.3);
+    padding: 0 5%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--cream);
+    letter-spacing: 0.05em;
+    text-decoration: none;
+  }
+
+  .nav-brand span { color: var(--gold-light); }
+
+  .nav-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: rgba(248,245,239,0.7);
+    text-decoration: none;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--gold-light); }
+
+  .nav-cta {
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold-light) !important;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.75rem !important;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .nav-cta:hover {
+    background: var(--gold) !important;
+    color: var(--navy) !important;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    background: var(--navy);
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 120px 5% 80px;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent 0%, rgba(184,146,42,0.04) 50%, rgba(184,146,42,0.08) 100%);
+    pointer-events: none;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -1px; left: 0; right: 0;
+    height: 80px;
+    background: linear-gradient(to bottom, transparent, var(--warm-white));
+  }
+
+  /* Decorative vertical lines */
+  .hero-lines {
+    position: absolute;
+    top: 0; right: 8%;
+    height: 100%;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, rgba(184,146,42,0.2), transparent);
+  }
+
+  .hero-lines::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 40px;
+    height: 100%;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, rgba(184,146,42,0.1), transparent);
+  }
+
+  .hero-content {
+    max-width: 800px;
+    position: relative;
+    z-index: 1;
+    animation: fadeUp 0.9s ease both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-eyebrow {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .hero-eyebrow::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-weight: 300;
+    line-height: 1.1;
+    color: var(--cream);
+    margin-bottom: 1rem;
+  }
+
+  .hero-title em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+
+  .hero-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    font-weight: 300;
+    font-style: italic;
+    color: rgba(248,245,239,0.6);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    max-width: 600px;
+  }
+
+  .hero-body {
+    font-size: 1rem;
+    color: rgba(248,245,239,0.75);
+    line-height: 1.8;
+    max-width: 580px;
+    margin-bottom: 3rem;
+    font-weight: 300;
+  }
+
+  .hero-body strong {
+    color: var(--cream);
+    font-weight: 500;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: var(--navy);
+    padding: 1rem 2.5rem;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s;
+    display: inline-block;
+  }
+
+  .btn-primary:hover {
+    background: var(--gold-light);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 24px rgba(184,146,42,0.3);
+  }
+
+  .btn-ghost {
+    background: transparent;
+    color: var(--cream);
+    padding: 1rem 2.5rem;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid rgba(248,245,239,0.3);
+    cursor: pointer;
+    transition: all 0.25s;
+    display: inline-block;
+  }
+
+  .btn-ghost:hover {
+    border-color: var(--gold);
+    color: var(--gold-light);
+  }
+
+  .hero-credentials {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(184,146,42,0.2);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 2.5rem;
+    animation: fadeUp 0.9s 0.3s ease both;
+  }
+
+  .cred-item {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(248,245,239,0.45);
+  }
+
+  /* ── URGENCY BANNER ── */
+  .urgency {
+    background: var(--gold);
+    padding: 1rem 5%;
+    text-align: center;
+  }
+
+  .urgency p {
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: var(--navy);
+  }
+
+  .urgency strong { font-weight: 700; }
+
+  .urgency a {
+    color: var(--navy);
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  /* ── SECTIONS ── */
+  section {
+    padding: 100px 5%;
+  }
+
+  .section-eyebrow {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .section-eyebrow::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 300;
+    line-height: 1.2;
+    color: var(--navy);
+    margin-bottom: 1.5rem;
+  }
+
+  .section-title em { font-style: italic; color: var(--gold); }
+
+  /* ── NOTICE TYPES ── */
+  .notices {
+    background: var(--cream);
+  }
+
+  .notices-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5px;
+    background: var(--border);
+    border: 1.5px solid var(--border);
+    margin-top: 3.5rem;
+  }
+
+  .notice-card {
+    background: var(--warm-white);
+    padding: 2.5rem;
+    transition: background 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .notice-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px;
+    height: 0;
+    background: var(--gold);
+    transition: height 0.3s ease;
+  }
+
+  .notice-card:hover { background: #fff; }
+  .notice-card:hover::before { height: 100%; }
+
+  .notice-tag {
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .notice-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.75rem;
+    line-height: 1.2;
+  }
+
+  .notice-desc {
+    font-size: 0.875rem;
+    color: var(--muted);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  /* ── WHY RITA ── */
+  .why {
+    background: var(--warm-white);
+  }
+
+  .why-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: start;
+    margin-top: 3.5rem;
+  }
+
+  .why-photo {
+    aspect-ratio: 3/4;
+    background: var(--navy-mid);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .why-photo-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: rgba(248,245,239,0.3);
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .why-photo-placeholder svg {
+    width: 48px;
+    height: 48px;
+    opacity: 0.2;
+  }
+
+  .why-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .why-photo-caption {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: linear-gradient(to top, rgba(15,31,61,0.95), transparent);
+    padding: 2rem 1.5rem 1.5rem;
+  }
+
+  .why-photo-caption p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-style: italic;
+    color: rgba(248,245,239,0.8);
+    line-height: 1.5;
+  }
+
+  .why-content p {
+    font-size: 1rem;
+    color: var(--muted);
+    line-height: 1.85;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+  }
+
+  .why-content p strong {
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  .pedigree-list {
+    margin-top: 2.5rem;
+    border-top: 1px solid var(--border);
+    padding-top: 2rem;
+  }
+
+  .pedigree-item {
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+    padding: 0.875rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .pedigree-firm {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--navy);
+    min-width: 200px;
+  }
+
+  .pedigree-role {
+    font-size: 0.82rem;
+    color: var(--muted);
+    font-weight: 300;
+  }
+
+  /* ── HOW IT WORKS ── */
+  .process {
+    background: var(--navy);
+    color: var(--cream);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .process::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent, rgba(184,146,42,0.04));
+    pointer-events: none;
+  }
+
+  .process .section-title { color: var(--cream); }
+
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0;
+    margin-top: 3.5rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .process-step {
+    padding: 2.5rem 2rem;
+    border-left: 1px solid rgba(184,146,42,0.2);
+    position: relative;
+  }
+
+  .step-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: rgba(184,146,42,0.2);
+    line-height: 1;
+    margin-bottom: 1.5rem;
+  }
+
+  .step-title {
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin-bottom: 0.75rem;
+  }
+
+  .step-desc {
+    font-size: 0.875rem;
+    color: rgba(248,245,239,0.6);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  /* ── QUOTE ── */
+  .quote-section {
+    background: var(--cream);
+    padding: 80px 5%;
+    text-align: center;
+  }
+
+  .quote-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--navy);
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.5;
+  }
+
+  .quote-attr {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  /* ── OGC ── */
+  .ogc {
+    background: var(--warm-white);
+  }
+
+  .ogc-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 5rem;
+    align-items: center;
+    margin-top: 3.5rem;
+  }
+
+  .ogc-text p {
+    font-size: 1rem;
+    color: var(--muted);
+    line-height: 1.85;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+  }
+
+  .ogc-services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+  }
+
+  .ogc-service {
+    background: var(--cream);
+    padding: 1.5rem;
+    font-size: 0.82rem;
+    color: var(--navy);
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  /* ── CONSULTATION CTA ── */
+  .consult {
+    background: var(--navy);
+    text-align: center;
+    padding: 100px 5%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .consult::before {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(184,146,42,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .consult .section-title {
+    color: var(--cream);
+    max-width: 700px;
+    margin: 1rem auto 1.5rem;
+  }
+
+  .consult p {
+    font-size: 1rem;
+    color: rgba(248,245,239,0.6);
+    max-width: 520px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.8;
+    font-weight: 300;
+  }
+
+  .consult-fee {
+    display: inline-block;
+    border: 1px solid rgba(184,146,42,0.3);
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    font-size: 0.8rem;
+    color: var(--gold-light);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #080f1d;
+    padding: 3rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    border-top: 1px solid rgba(184,146,42,0.15);
+  }
+
+  .footer-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--cream);
+  }
+
+  .footer-brand span { color: var(--gold-light); }
+
+  .footer-mid {
+    font-size: 0.72rem;
+    color: rgba(248,245,239,0.3);
+    text-align: center;
+    line-height: 1.8;
+  }
+
+  .footer-contact {
+    text-align: right;
+  }
+
+  .footer-contact a {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--gold-light);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.25rem;
+  }
+
+  .footer-contact a:hover { color: var(--cream); }
+
+  .footer-disclaimer {
+    width: 100%;
+    font-size: 0.68rem;
+    color: rgba(248,245,239,0.2);
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    line-height: 1.7;
+  }
+
+  /* ── SCROLL ANIMATIONS ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .why-layout { grid-template-columns: 1fr; gap: 3rem; }
+    .ogc-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .process-steps { grid-template-columns: 1fr; }
+    .process-step { border-left: none; border-top: 1px solid rgba(184,146,42,0.2); }
+    .hero-credentials { gap: 1rem; }
+    footer { flex-direction: column; text-align: center; }
+    .footer-contact { text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <a href="#" class="nav-brand">RD Abro <span>Legal</span></a>
+  <ul class="nav-links">
+    <li><a href="#practice">Practice</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#ogc">OGC</a></li>
+    <li><a href="#consult" class="nav-cta">Book Consultation</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-lines"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Tax Controversy &amp; Digital Assets · Chicago, Illinois</p>
+    <h1 class="hero-title">
+      The IRS is not<br>
+      <em>always right.</em><br>
+      How you respond<br>matters.
+    </h1>
+    <p class="hero-subtitle">Big Law discipline. Boutique attention. Built for what crypto enforcement has become.</p>
+    <p class="hero-body">
+      The IRS is using blockchain analytics, issuing CP2000 notices at scale, and matching 1099-DA data with increasing precision. This isn't the Wild West anymore. <strong>It requires the kind of disciplined, substantive advocacy that comes from real tax controversy experience — not just crypto familiarity.</strong>
+    </p>
+    <div class="hero-actions">
+      <a href="#consult" class="btn-primary">Book a $500 Consultation</a>
+      <a href="#practice" class="btn-ghost">What I Handle</a>
+    </div>
+    <div class="hero-credentials">
+      <span class="cred-item">Michigan Law J.D.</span>
+      <span class="cred-item">Latham &amp; Watkins</span>
+      <span class="cred-item">Baker &amp; McKenzie</span>
+      <span class="cred-item">Thompson Coburn</span>
+      <span class="cred-item">Seyfarth Shaw</span>
+    </div>
+  </div>
+</section>
+
+<!-- URGENCY BANNER -->
+<div class="urgency">
+  <p><strong>Tax season 2026:</strong> CP2000 notices for crypto are surging. You have 60 days from the notice date to respond. <a href="#consult">Don't wait.</a></p>
+</div>
+
+<!-- PRACTICE AREAS -->
+<section class="notices reveal" id="practice">
+  <div class="section-eyebrow">Digital Asset Tax Controversy</div>
+  <h2 class="section-title">IRS notices I <em>handle</em></h2>
+  <p style="max-width:620px; color:var(--muted); line-height:1.8; font-weight:300; font-size:0.95rem;">
+    Every notice requires a different strategy. The wrong response — or no response — can lock in a position that's hard to walk back. Here's what I handle.
+  </p>
+
+  <div class="notices-grid">
+    <div class="notice-card">
+      <p class="notice-tag">Most Common</p>
+      <h3 class="notice-name">CP2000<br>Underreporter Notice</h3>
+      <p class="notice-desc">The IRS matched your exchange data against your return and found a discrepancy. Often triggered by 1099-DA gross proceeds reported without cost basis. Most proposed deficiencies are overstated — sometimes dramatically.</p>
+    </div>
+    <div class="notice-card">
+      <p class="notice-tag">Required Response</p>
+      <h3 class="notice-name">Letter 6173</h3>
+      <p class="notice-desc">Unlike informational letters, this one requires a response. You must either file amended returns, provide documentation confirming correct reporting, or explain your position in writing. Ignoring it invites escalation.</p>
+    </div>
+    <div class="notice-card">
+      <p class="notice-tag">Informational Warning</p>
+      <h3 class="notice-name">Letters 6174<br>&amp; 6174-A</h3>
+      <p class="notice-desc">The IRS is telling you they have information about your crypto accounts. No response required — but the underlying compliance issue is real. Receiving one means you're on their radar.</p>
+    </div>
+    <div class="notice-card">
+      <p class="notice-tag">Examination</p>
+      <h3 class="notice-name">IRS Audit —<br>Digital Assets</h3>
+      <p class="notice-desc">A full examination of your digital asset activity. Requires organized documentation, clear legal positions, and an advocate who understands how the IRS evaluates crypto transactions — including DeFi, NFTs, and staking.</p>
+    </div>
+    <div class="notice-card">
+      <p class="notice-tag">Penalty Defense</p>
+      <h3 class="notice-name">Accuracy-Related<br>Penalties</h3>
+      <p class="notice-desc">The IRS proposes a 20% penalty on top of the tax. Most people pay it without questioning it. Reasonable cause, substantial authority, and first-time abatement are all grounds to eliminate it — if you raise them correctly.</p>
+    </div>
+    <div class="notice-card">
+      <p class="notice-tag">Prior Year Exposure</p>
+      <h3 class="notice-name">Voluntary<br>Disclosure</h3>
+      <p class="notice-desc">Unreported crypto from prior years carries real risk. Coming forward proactively — before the IRS finds it — is almost always the better outcome. Attorney-client privilege protects the conversation. A CPA cannot offer that.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY RITA -->
+<section class="why reveal" id="about">
+  <div class="section-eyebrow">About Rita D. Abro</div>
+  <h2 class="section-title">Big Law training.<br><em>Boutique focus.</em></h2>
+
+  <div class="why-layout">
+    <div class="why-photo">
+      <!-- Replace src with actual headshot -->
+      <div class="why-photo-placeholder" id="photo-placeholder">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+          <circle cx="12" cy="7" r="4"/>
+        </svg>
+        <span>Photo coming soon</span>
+      </div>
+      <div class="why-photo-caption">
+        <p>"The IRS enforcement landscape has matured. So has the need for advocates who understand it."</p>
+      </div>
+    </div>
+
+    <div class="why-content">
+      <p>
+        I'm a tax controversy attorney, and I'm now taking cryptocurrency cases — <strong>deliberately.</strong>
+      </p>
+      <p>
+        After nearly a decade in Big Law, I've spent my career doing exactly what crypto holders now need most: building and defending positions before the IRS, understanding how examinations are conducted, and knowing what a strong response looks like — and what a weak one costs you.
+      </p>
+      <p>
+        The digital asset enforcement landscape has changed. The IRS is no longer guessing. Taxpayers need advocates who understand both the law and how the IRS builds its cases. <strong>That's the gap I'm filling.</strong>
+      </p>
+      <p>
+        I founded RD Abro Legal in 2018 after my Big Law career, and serve as outside general counsel to financial firms. I am now expanding my practice to digital asset controversy — where institutional-quality advocacy is most needed and least available.
+      </p>
+
+      <div class="pedigree-list">
+        <div class="pedigree-item">
+          <span class="pedigree-firm">Michigan Law, J.D.</span>
+          <span class="pedigree-role">University of Michigan Law School, 2006</span>
+        </div>
+        <div class="pedigree-item">
+          <span class="pedigree-firm">Latham &amp; Watkins LLP</span>
+          <span class="pedigree-role">Associate, M&amp;A and Tax</span>
+        </div>
+        <div class="pedigree-item">
+          <span class="pedigree-firm">Baker &amp; McKenzie LLP</span>
+          <span class="pedigree-role">Associate — Fortune 500 &amp; Fortune 50 tax advisory</span>
+        </div>
+        <div class="pedigree-item">
+          <span class="pedigree-firm">Thompson Coburn LLP</span>
+          <span class="pedigree-role">Lead Tax Controversy Associate</span>
+        </div>
+        <div class="pedigree-item">
+          <span class="pedigree-firm">Seyfarth Shaw LLP</span>
+          <span class="pedigree-role">Senior Tax Associate</span>
+        </div>
+        <div class="pedigree-item">
+          <span class="pedigree-firm">RD Abro Legal LLC</span>
+          <span class="pedigree-role">Founder &amp; Managing Attorney, 2018–Present</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<div class="quote-section reveal">
+  <p class="quote-text">"Once you respond to the IRS, that response is on the record. Your first position becomes your position. Know what you're dealing with before you write a single word."</p>
+  <p class="quote-attr">— Rita D. Abro, RD Abro Legal LLC</p>
+</div>
+
+<!-- HOW IT WORKS -->
+<section class="process reveal" id="process">
+  <div class="section-eyebrow" style="color:var(--gold-light);">How It Works</div>
+  <h2 class="section-title">From notice to <em>resolution</em></h2>
+
+  <div class="process-steps">
+    <div class="process-step">
+      <div class="step-number">01</div>
+      <p class="step-title">Initial Consultation</p>
+      <p class="step-desc">$500 flat fee. We review your notice, assess the IRS's position, analyze your records, and tell you exactly what kind of response your situation requires — and whether you need representation to do it.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-number">02</div>
+      <p class="step-title">Records &amp; Analysis</p>
+      <p class="step-desc">We gather your exchange records, transaction history, cost basis documentation, and any prior filings. The strength of your defense is directly proportional to the quality of your documentation.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-number">03</div>
+      <p class="step-title">Build the Response</p>
+      <p class="step-desc">We prepare a substantive written response addressing each element of the IRS's proposed adjustment — basis corrections, non-taxable transfer exclusions, penalty abatement, and corrected calculations.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-number">04</div>
+      <p class="step-title">Submit &amp; Advocate</p>
+      <p class="step-desc">We submit the response on your behalf and manage all IRS communication. If the matter requires escalation to Appeals or Tax Court, we continue the representation at every stage.</p>
+    </div>
+  </div>
+</section>
+
+<!-- OGC -->
+<section class="ogc reveal" id="ogc">
+  <div class="section-eyebrow">Outside General Counsel</div>
+  <h2 class="section-title">Institutional counsel.<br><em>Without the overhead.</em></h2>
+
+  <div class="ogc-grid">
+    <div class="ogc-text">
+      <p>
+        Since 2018, I have served as retained outside general counsel to financial firms that need Big Law expertise without Big Law billing rates or institutional conflicts.
+      </p>
+      <p>
+        I also serve as tax co-counsel to law firms requiring specialized expertise on complex transactions — private equity structures, M&amp;A tax planning, corporate reorganizations, and international tax compliance.
+      </p>
+      <p>
+        If your firm needs a senior attorney on call without the overhead of a full-time hire, that's exactly what I built this practice to provide.
+      </p>
+      <a href="#consult" class="btn-primary" style="margin-top:1rem; display:inline-block;">Discuss a Retainer</a>
+    </div>
+
+    <div class="ogc-services">
+      <div class="ogc-service">Regulatory Compliance</div>
+      <div class="ogc-service">Corporate Governance</div>
+      <div class="ogc-service">M&amp;A Tax Planning</div>
+      <div class="ogc-service">PE Fund Structures</div>
+      <div class="ogc-service">Corporate Reorganizations</div>
+      <div class="ogc-service">International Tax</div>
+      <div class="ogc-service">Transaction Advisory</div>
+      <div class="ogc-service">Tax Co-Counsel</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONSULTATION CTA -->
+<section class="consult reveal" id="consult">
+  <div class="section-eyebrow" style="justify-content:center; color:var(--gold-light);">Book a Consultation</div>
+  <h2 class="section-title">Before you write a single<br>word to the <em>IRS.</em></h2>
+  <p>A $500 flat-fee consultation tells you exactly where you stand — what the IRS is actually alleging, what your records need to show, and what kind of response your notice requires.</p>
+  <div class="consult-fee">$500 · 30-Minute Flat-Fee Consultation · Chicago / Remote</div>
+  <br>
+  <a href="[YOUR CALENDLY LINK]" class="btn-primary">Schedule Now</a>
+  &nbsp;&nbsp;
+  <a href="mailto:[YOUR EMAIL]" class="btn-ghost" style="margin-top:0.5rem; display:inline-block;">Send a Message</a>
+
+  <p style="margin-top:3rem; font-size:0.72rem; color:rgba(248,245,239,0.3); letter-spacing:0.08em; text-transform:uppercase;">
+    Attorney-Client Privilege applies from the first conversation.<br>
+    Licensed in Illinois · RD Abro Legal LLC · Chicago
+  </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">RD Abro <span>Legal</span> LLC</div>
+  <div class="footer-mid">
+    Michigan Law · Latham &amp; Watkins · Baker &amp; McKenzie<br>
+    Thompson Coburn · Seyfarth Shaw
+  </div>
+  <div class="footer-contact">
+    <a href="mailto:[YOUR EMAIL]">[your email]</a>
+    <a href="[YOUR CALENDLY]">Book Consultation →</a>
+  </div>
+  <p class="footer-disclaimer">
+    © 2026 RD Abro Legal LLC · All Rights Reserved · Licensed in Illinois<br>
+    This website is for informational purposes only and does not constitute legal advice. Viewing this site does not create an attorney-client relationship.<br>
+    Attorney Advertising. Prior results do not guarantee similar outcomes.
+  </p>
+</footer>
+
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
+
+  // Smooth nav highlight
+  const sections = document.querySelectorAll('section[id]');
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    sections.forEach(section => {
+      if (scrollY >= section.offsetTop - 100) {
+        document.querySelectorAll('.nav-links a').forEach(a => {
+          a.style.color = '';
+        });
+        const activeLink = document.querySelector(`.nav-links a[href="#${section.id}"]`);
+        if (activeLink) activeLink.style.color = 'var(--gold-light)';
+      }
+    });
+  });
+</script>
+</body>
+</html>
