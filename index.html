@@ -3,1027 +3,445 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RD Abro Legal LLC | Tax Controversy & Digital Assets | Chicago</title>
-<meta name="description" content="Rita D. Abro is a Chicago tax controversy attorney focusing on digital asset and cryptocurrency IRS enforcement. Michigan Law. Latham & Watkins. Baker & McKenzie. Thompson Coburn. Seyfarth Shaw.">
+<title>RD Abro Legal LLC | Tax & Business Counsel | Chicago</title>
+<meta name="description" content="Rita D. Abro is a Chicago tax attorney advising companies, founders, and investors on tax compliance, M&A and transaction tax, entity formation, digital assets, and outside general counsel services.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --navy: #0f1f3d;
-    --navy-mid: #1a2f52;
-    --gold: #b8922a;
-    --gold-light: #d4aa4a;
-    --cream: #f8f5ef;
-    --warm-white: #fdfcf9;
-    --text: #1a1a1a;
-    --muted: #6b6b6b;
-    --border: #e0d8cc;
-  }
-
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    font-family: 'DM Sans', sans-serif;
-    background: var(--warm-white);
-    color: var(--text);
-    overflow-x: hidden;
-  }
-
-  /* ── NAVIGATION ── */
-  nav {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 100;
-    background: rgba(15, 31, 61, 0.97);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(184, 146, 42, 0.3);
-    padding: 0 5%;
-    height: 72px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .nav-brand {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: var(--cream);
-    letter-spacing: 0.05em;
-    text-decoration: none;
-  }
-
-  .nav-brand span { color: var(--gold-light); }
-
-  .nav-links {
-    display: flex;
-    gap: 2.5rem;
-    list-style: none;
-  }
-
-  .nav-links a {
-    font-size: 0.78rem;
-    font-weight: 500;
-    color: rgba(248,245,239,0.7);
-    text-decoration: none;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    transition: color 0.2s;
-  }
-
-  .nav-links a:hover { color: var(--gold-light); }
-
-  .nav-cta {
-    background: transparent;
-    border: 1px solid var(--gold);
-    color: var(--gold-light) !important;
-    padding: 0.5rem 1.25rem;
-    font-size: 0.75rem !important;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.2s;
-    text-decoration: none;
-    font-weight: 500;
-  }
-
-  .nav-cta:hover {
-    background: var(--gold) !important;
-    color: var(--navy) !important;
-  }
-
-  /* ── HERO ── */
-  .hero {
-    min-height: 100vh;
-    background: var(--navy);
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    padding: 120px 5% 80px;
-  }
-
-  .hero::before {
-    content: '';
-    position: absolute;
-    top: 0; right: 0;
-    width: 55%;
-    height: 100%;
-    background: linear-gradient(135deg, transparent 0%, rgba(184,146,42,0.04) 50%, rgba(184,146,42,0.08) 100%);
-    pointer-events: none;
-  }
-
-  .hero::after {
-    content: '';
-    position: absolute;
-    bottom: -1px; left: 0; right: 0;
-    height: 80px;
-    background: linear-gradient(to bottom, transparent, var(--warm-white));
-  }
-
-  /* Decorative vertical lines */
-  .hero-lines {
-    position: absolute;
-    top: 0; right: 8%;
-    height: 100%;
-    width: 1px;
-    background: linear-gradient(to bottom, transparent, rgba(184,146,42,0.2), transparent);
-  }
-
-  .hero-lines::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 40px;
-    height: 100%;
-    width: 1px;
-    background: linear-gradient(to bottom, transparent, rgba(184,146,42,0.1), transparent);
-  }
-
-  .hero-content {
-    max-width: 800px;
-    position: relative;
-    z-index: 1;
-    animation: fadeUp 0.9s ease both;
-  }
-
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-
-  .hero-eyebrow {
-    font-size: 0.72rem;
-    font-weight: 500;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--gold-light);
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .hero-eyebrow::before {
-    content: '';
-    display: block;
-    width: 40px;
-    height: 1px;
-    background: var(--gold);
-  }
-
-  .hero-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(3rem, 6vw, 5.5rem);
-    font-weight: 300;
-    line-height: 1.1;
-    color: var(--cream);
-    margin-bottom: 1rem;
-  }
-
-  .hero-title em {
-    font-style: italic;
-    color: var(--gold-light);
-  }
-
-  .hero-subtitle {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(1.1rem, 2vw, 1.4rem);
-    font-weight: 300;
-    font-style: italic;
-    color: rgba(248,245,239,0.6);
-    margin-bottom: 2.5rem;
-    line-height: 1.6;
-    max-width: 600px;
-  }
-
-  .hero-body {
-    font-size: 1rem;
-    color: rgba(248,245,239,0.75);
-    line-height: 1.8;
-    max-width: 580px;
-    margin-bottom: 3rem;
-    font-weight: 300;
-  }
-
-  .hero-body strong {
-    color: var(--cream);
-    font-weight: 500;
-  }
-
-  .hero-actions {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  .btn-primary {
-    background: var(--gold);
-    color: var(--navy);
-    padding: 1rem 2.5rem;
-    font-size: 0.78rem;
-    font-weight: 500;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    transition: all 0.25s;
-    display: inline-block;
-  }
-
-  .btn-primary:hover {
-    background: var(--gold-light);
-    transform: translateY(-1px);
-    box-shadow: 0 8px 24px rgba(184,146,42,0.3);
-  }
-
-  .btn-ghost {
-    background: transparent;
-    color: var(--cream);
-    padding: 1rem 2.5rem;
-    font-size: 0.78rem;
-    font-weight: 500;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: 1px solid rgba(248,245,239,0.3);
-    cursor: pointer;
-    transition: all 0.25s;
-    display: inline-block;
-  }
-
-  .btn-ghost:hover {
-    border-color: var(--gold);
-    color: var(--gold-light);
-  }
-
-  .hero-credentials {
-    margin-top: 4rem;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(184,146,42,0.2);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem 2.5rem;
-    animation: fadeUp 0.9s 0.3s ease both;
-  }
-
-  .cred-item {
-    font-size: 0.72rem;
-    font-weight: 500;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: rgba(248,245,239,0.45);
-  }
-
-  /* ── URGENCY BANNER ── */
-  .urgency {
-    background: var(--gold);
-    padding: 1rem 5%;
-    text-align: center;
-  }
-
-  .urgency p {
-    font-size: 0.82rem;
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    color: var(--navy);
-  }
-
-  .urgency strong { font-weight: 700; }
-
-  .urgency a {
-    color: var(--navy);
-    font-weight: 700;
-    text-decoration: underline;
-  }
-
-  /* ── SECTIONS ── */
-  section {
-    padding: 100px 5%;
-  }
-
-  .section-eyebrow {
-    font-size: 0.7rem;
-    font-weight: 500;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .section-eyebrow::before {
-    content: '';
-    display: block;
-    width: 30px;
-    height: 1px;
-    background: var(--gold);
-  }
-
-  .section-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2rem, 4vw, 3.2rem);
-    font-weight: 300;
-    line-height: 1.2;
-    color: var(--navy);
-    margin-bottom: 1.5rem;
-  }
-
-  .section-title em { font-style: italic; color: var(--gold); }
-
-  /* ── NOTICE TYPES ── */
-  .notices {
-    background: var(--cream);
-  }
-
-  .notices-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5px;
-    background: var(--border);
-    border: 1.5px solid var(--border);
-    margin-top: 3.5rem;
-  }
-
-  .notice-card {
-    background: var(--warm-white);
-    padding: 2.5rem;
-    transition: background 0.2s;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .notice-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0;
-    width: 3px;
-    height: 0;
-    background: var(--gold);
-    transition: height 0.3s ease;
-  }
-
-  .notice-card:hover { background: #fff; }
-  .notice-card:hover::before { height: 100%; }
-
-  .notice-tag {
-    font-size: 0.65rem;
-    font-weight: 500;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 1rem;
-    font-family: 'DM Sans', sans-serif;
-  }
-
-  .notice-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--navy);
-    margin-bottom: 0.75rem;
-    line-height: 1.2;
-  }
-
-  .notice-desc {
-    font-size: 0.875rem;
-    color: var(--muted);
-    line-height: 1.7;
-    font-weight: 300;
-  }
-
-  /* ── WHY RITA ── */
-  .why {
-    background: var(--warm-white);
-  }
-
-  .why-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6rem;
-    align-items: start;
-    margin-top: 3.5rem;
-  }
-
-  .why-photo {
-    aspect-ratio: 3/4;
-    background: var(--navy-mid);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .why-photo-placeholder {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    color: rgba(248,245,239,0.3);
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-  }
-
-  .why-photo-placeholder svg {
-    width: 48px;
-    height: 48px;
-    opacity: 0.2;
-  }
-
-  .why-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .why-photo-caption {
-    position: absolute;
-    bottom: 0; left: 0; right: 0;
-    background: linear-gradient(to top, rgba(15,31,61,0.95), transparent);
-    padding: 2rem 1.5rem 1.5rem;
-  }
-
-  .why-photo-caption p {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1rem;
-    font-style: italic;
-    color: rgba(248,245,239,0.8);
-    line-height: 1.5;
-  }
-
-  .why-content p {
-    font-size: 1rem;
-    color: var(--muted);
-    line-height: 1.85;
-    margin-bottom: 1.5rem;
-    font-weight: 300;
-  }
-
-  .why-content p strong {
-    color: var(--text);
-    font-weight: 500;
-  }
-
-  .pedigree-list {
-    margin-top: 2.5rem;
-    border-top: 1px solid var(--border);
-    padding-top: 2rem;
-  }
-
-  .pedigree-item {
-    display: flex;
-    align-items: baseline;
-    gap: 1.5rem;
-    padding: 0.875rem 0;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .pedigree-firm {
-    font-weight: 500;
-    font-size: 0.9rem;
-    color: var(--navy);
-    min-width: 200px;
-  }
-
-  .pedigree-role {
-    font-size: 0.82rem;
-    color: var(--muted);
-    font-weight: 300;
-  }
-
-  /* ── HOW IT WORKS ── */
-  .process {
-    background: var(--navy);
-    color: var(--cream);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .process::before {
-    content: '';
-    position: absolute;
-    top: 0; right: 0;
-    width: 40%;
-    height: 100%;
-    background: linear-gradient(135deg, transparent, rgba(184,146,42,0.04));
-    pointer-events: none;
-  }
-
-  .process .section-title { color: var(--cream); }
-
-  .process-steps {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 0;
-    margin-top: 3.5rem;
-    position: relative;
-    z-index: 1;
-  }
-
-  .process-step {
-    padding: 2.5rem 2rem;
-    border-left: 1px solid rgba(184,146,42,0.2);
-    position: relative;
-  }
-
-  .step-number {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 3.5rem;
-    font-weight: 300;
-    color: rgba(184,146,42,0.2);
-    line-height: 1;
-    margin-bottom: 1.5rem;
-  }
-
-  .step-title {
-    font-size: 0.85rem;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--gold-light);
-    margin-bottom: 0.75rem;
-  }
-
-  .step-desc {
-    font-size: 0.875rem;
-    color: rgba(248,245,239,0.6);
-    line-height: 1.7;
-    font-weight: 300;
-  }
-
-  /* ── QUOTE ── */
-  .quote-section {
-    background: var(--cream);
-    padding: 80px 5%;
-    text-align: center;
-  }
-
-  .quote-text {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(1.5rem, 3vw, 2.2rem);
-    font-weight: 300;
-    font-style: italic;
-    color: var(--navy);
-    max-width: 800px;
-    margin: 0 auto 1.5rem;
-    line-height: 1.5;
-  }
-
-  .quote-attr {
-    font-size: 0.75rem;
-    font-weight: 500;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--gold);
-  }
-
-  /* ── OGC ── */
-  .ogc {
-    background: var(--warm-white);
-  }
-
-  .ogc-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 5rem;
-    align-items: center;
-    margin-top: 3.5rem;
-  }
-
-  .ogc-text p {
-    font-size: 1rem;
-    color: var(--muted);
-    line-height: 1.85;
-    margin-bottom: 1.5rem;
-    font-weight: 300;
-  }
-
-  .ogc-services {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1px;
-    background: var(--border);
-    border: 1px solid var(--border);
-  }
-
-  .ogc-service {
-    background: var(--cream);
-    padding: 1.5rem;
-    font-size: 0.82rem;
-    color: var(--navy);
-    font-weight: 400;
-    line-height: 1.4;
-  }
-
-  /* ── CONSULTATION CTA ── */
-  .consult {
-    background: var(--navy);
-    text-align: center;
-    padding: 100px 5%;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .consult::before {
-    content: '';
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%,-50%);
-    width: 600px;
-    height: 600px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(184,146,42,0.06) 0%, transparent 70%);
-    pointer-events: none;
-  }
-
-  .consult .section-title {
-    color: var(--cream);
-    max-width: 700px;
-    margin: 1rem auto 1.5rem;
-  }
-
-  .consult p {
-    font-size: 1rem;
-    color: rgba(248,245,239,0.6);
-    max-width: 520px;
-    margin: 0 auto 2.5rem;
-    line-height: 1.8;
-    font-weight: 300;
-  }
-
-  .consult-fee {
-    display: inline-block;
-    border: 1px solid rgba(184,146,42,0.3);
-    padding: 1rem 2rem;
-    margin-bottom: 2rem;
-    font-size: 0.8rem;
-    color: var(--gold-light);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-  }
-
-  /* ── FOOTER ── */
-  footer {
-    background: #080f1d;
-    padding: 3rem 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    border-top: 1px solid rgba(184,146,42,0.15);
-  }
-
-  .footer-brand {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--cream);
-  }
-
-  .footer-brand span { color: var(--gold-light); }
-
-  .footer-mid {
-    font-size: 0.72rem;
-    color: rgba(248,245,239,0.3);
-    text-align: center;
-    line-height: 1.8;
-  }
-
-  .footer-contact {
-    text-align: right;
-  }
-
-  .footer-contact a {
-    display: block;
-    font-size: 0.8rem;
-    color: var(--gold-light);
-    text-decoration: none;
-    letter-spacing: 0.05em;
-    margin-bottom: 0.25rem;
-  }
-
-  .footer-contact a:hover { color: var(--cream); }
-
-  .footer-disclaimer {
-    width: 100%;
-    font-size: 0.68rem;
-    color: rgba(248,245,239,0.2);
-    text-align: center;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba(255,255,255,0.05);
-    line-height: 1.7;
-  }
-
-  /* ── SCROLL ANIMATIONS ── */
-  .reveal {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
-
-  .reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  /* ── RESPONSIVE ── */
-  @media (max-width: 768px) {
-    .nav-links { display: none; }
-    .why-layout { grid-template-columns: 1fr; gap: 3rem; }
-    .ogc-grid { grid-template-columns: 1fr; gap: 3rem; }
-    .process-steps { grid-template-columns: 1fr; }
-    .process-step { border-left: none; border-top: 1px solid rgba(184,146,42,0.2); }
-    .hero-credentials { gap: 1rem; }
-    footer { flex-direction: column; text-align: center; }
-    .footer-contact { text-align: center; }
+  :root{
+    --green-deep:#00274C;   /* Michigan Blue */
+    --green-ink:#001A33;    /* darker blue */
+    --green-tint:#E9EEF4;   /* pale blue tint */
+    --paper:#F8F7F3;
+    --ink:#1B2129;
+    --ink-soft:#47525E;
+    --brass:#8F7000;        /* deep maize — readable on light backgrounds */
+    --brass-soft:#FFCB05;   /* true Michigan Maize — used on dark blue */
+    --maize:#FFCB05;
+    --rule:#D8DAD3;
+    --max:1120px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *,*::before,*::after{animation:none!important;transition:none!important;}
+  }
+  body{
+    font-family:'Archivo',system-ui,sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 28px;}
+  a{color:inherit;}
+  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{
+    outline:2px solid var(--green-deep);outline-offset:3px;
+  }
+
+  /* ---------- Eyebrow / labels ---------- */
+  .eyebrow{
+    font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--brass);display:flex;align-items:center;gap:14px;
+  }
+  .eyebrow::after{content:"";height:3px;flex:0 0 44px;background:var(--maize);}
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(248,247,243,.92);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--rule);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px;}
+  .brand{display:flex;align-items:baseline;gap:12px;text-decoration:none;}
+  .brand-mark{
+    font-family:'Newsreader',serif;font-weight:500;font-size:22px;color:var(--green-deep);
+    letter-spacing:.01em;
+  }
+  .brand-mark .amp{color:var(--brass);}
+  .brand-sub{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);}
+  .nav-links{display:flex;gap:34px;list-style:none;align-items:center;}
+  .nav-links a{
+    text-decoration:none;font-size:14px;font-weight:500;color:var(--ink-soft);
+    transition:color .15s ease;
+  }
+  .nav-links a:hover{color:var(--green-deep);}
+  .nav-cta{
+    background:var(--green-deep);color:#fff!important;padding:10px 20px;border-radius:2px;
+    transition:background .15s ease;
+  }
+  .nav-cta:hover{background:var(--maize);color:var(--green-deep)!important;}
+  @media(max-width:840px){
+    .nav-links li:not(:last-child){display:none;}
+    .brand-sub{display:none;}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{padding:104px 0 0;}
+  .hero-grid{display:grid;grid-template-columns:1fr;gap:36px;}
+  .hero h1{
+    font-family:'Newsreader',serif;font-weight:300;
+    font-size:clamp(40px,6.2vw,74px);line-height:1.06;letter-spacing:-.015em;
+    color:var(--green-deep);max-width:15ch;margin-top:26px;
+  }
+  .hero h1 em{font-style:italic;font-weight:400;color:var(--brass);}
+  .hero-sub{
+    max-width:56ch;color:var(--ink-soft);font-size:19px;margin-top:26px;
+  }
+  .hero-actions{display:flex;gap:16px;margin-top:38px;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;text-decoration:none;font-size:15px;font-weight:600;
+    padding:15px 30px;border-radius:2px;transition:background .15s ease,color .15s ease,border-color .15s ease;
+  }
+  .btn-primary{background:var(--green-deep);color:#fff;}
+  .btn-primary:hover{background:var(--maize);color:var(--green-deep);}
+  .btn-ghost{border:1px solid var(--green-deep);color:var(--green-deep);}
+  .btn-ghost:hover{background:var(--green-tint);}
+
+  /* credentials strip */
+  .creds{
+    margin-top:84px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
+    padding:22px 0;
+  }
+  .creds-inner{
+    display:flex;flex-wrap:wrap;gap:14px 0;align-items:center;justify-content:space-between;
+  }
+  .creds span{
+    font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);
+    font-weight:500;white-space:nowrap;
+  }
+  .creds .dot{color:var(--brass);font-size:11px;}
+  @media(max-width:840px){
+    .creds-inner{justify-content:flex-start;gap:10px 18px;}
+    .creds .dot{display:none;}
+  }
+
+  /* ---------- Sections ---------- */
+  section{padding:96px 0;}
+  .section-head{margin-bottom:56px;max-width:720px;}
+  .section-head h2{
+    font-family:'Newsreader',serif;font-weight:300;font-size:clamp(30px,4vw,44px);
+    line-height:1.12;color:var(--green-deep);margin-top:20px;letter-spacing:-.01em;
+  }
+  .section-head p{color:var(--ink-soft);margin-top:16px;}
+
+  /* ---------- Practice index (signature) ---------- */
+  .practice{background:#fff;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
+  .index{border-top:1px solid var(--rule);}
+  .index-row{
+    display:grid;grid-template-columns:110px 1fr;gap:28px;
+    padding:34px 0;border-bottom:1px solid var(--rule);
+    align-items:start;
+  }
+  .index-mark{
+    font-family:'Newsreader',serif;font-size:30px;font-weight:400;color:var(--brass);
+    line-height:1;padding-top:4px;white-space:nowrap;
+  }
+  .index-body h3{
+    font-family:'Newsreader',serif;font-weight:400;font-size:25px;color:var(--green-deep);
+    letter-spacing:-.005em;
+  }
+  .index-body p{color:var(--ink-soft);margin-top:10px;max-width:66ch;font-size:16px;}
+  .index-tags{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px;}
+  .index-tags span{
+    font-size:12px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;
+    color:var(--green-deep);background:var(--green-tint);padding:5px 11px;border-radius:2px;
+  }
+  @media(max-width:640px){
+    .index-row{grid-template-columns:1fr;gap:10px;padding:28px 0;}
+    .index-mark{font-size:24px;}
+  }
+
+  /* ---------- Who I work with ---------- */
+  .clients-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);}
+  .client-card{background:var(--paper);padding:40px 34px;}
+  .client-card h3{
+    font-family:'Newsreader',serif;font-weight:400;font-size:23px;color:var(--green-deep);
+  }
+  .client-card p{color:var(--ink-soft);font-size:16px;margin-top:12px;}
+  @media(max-width:840px){.clients-grid{grid-template-columns:1fr;}}
+
+  /* ---------- About ---------- */
+  .about{background:var(--green-deep);color:#EDEFE9;}
+  .about .eyebrow{color:var(--brass-soft);}
+  .about .eyebrow::after{background:var(--brass-soft);}
+  .about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:start;}
+  .about h2{
+    font-family:'Newsreader',serif;font-weight:300;font-size:clamp(30px,4vw,44px);
+    line-height:1.14;margin-top:20px;color:#fff;letter-spacing:-.01em;
+  }
+  .about h2 em{font-style:italic;color:var(--brass-soft);}
+  .about p{color:#C4CDC4;margin-top:18px;font-size:16.5px;max-width:60ch;}
+  .about-facts{border-top:1px solid rgba(255,255,255,.18);margin-top:14px;}
+  .fact{
+    display:grid;grid-template-columns:170px 1fr;gap:20px;
+    padding:20px 0;border-bottom:1px solid rgba(255,255,255,.18);
+  }
+  .fact dt{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--brass-soft);font-weight:600;padding-top:3px;}
+  .fact dd{color:#E7EAE2;font-size:16px;}
+  blockquote{
+    font-family:'Newsreader',serif;font-style:italic;font-weight:300;
+    font-size:24px;line-height:1.4;color:#fff;margin-top:34px;max-width:26ch;
+  }
+  blockquote footer{font-family:'Archivo',sans-serif;font-style:normal;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass-soft);margin-top:14px;}
+  @media(max-width:840px){
+    .about-grid{grid-template-columns:1fr;gap:44px;}
+    .fact{grid-template-columns:1fr;gap:4px;}
+  }
+
+  /* ---------- Contact ---------- */
+  .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start;}
+  .contact-note{color:var(--ink-soft);font-size:16px;margin-top:16px;max-width:48ch;}
+  .contact-meta{margin-top:34px;border-top:1px solid var(--rule);}
+  .contact-meta div{padding:18px 0;border-bottom:1px solid var(--rule);}
+  .contact-meta strong{
+    display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--brass);font-weight:600;margin-bottom:5px;
+  }
+  form{background:#fff;border:1px solid var(--rule);padding:44px;}
+  .field{margin-bottom:22px;}
+  .field label{
+    display:block;font-size:13px;font-weight:600;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--green-deep);margin-bottom:8px;
+  }
+  .field input,.field select,.field textarea{
+    width:100%;border:1px solid var(--rule);background:var(--paper);
+    padding:13px 15px;font-family:'Archivo',sans-serif;font-size:16px;color:var(--ink);
+    border-radius:2px;
+  }
+  .field textarea{min-height:140px;resize:vertical;}
+  .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--brass);}
+  .form-disclaimer{font-size:13px;color:var(--ink-soft);margin:6px 0 24px;line-height:1.55;}
+  form .btn{border:none;cursor:pointer;width:100%;font-family:'Archivo',sans-serif;}
+  @media(max-width:840px){
+    .contact-grid{grid-template-columns:1fr;gap:44px;}
+    form{padding:30px 22px;}
+  }
+
+  /* ---------- Footer ---------- */
+  footer.site{
+    background:var(--green-ink);color:#93A398;padding:56px 0 40px;font-size:13.5px;
+  }
+  .foot-grid{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;}
+  .foot-brand{font-family:'Newsreader',serif;font-size:19px;color:#E7EAE2;}
+  .foot-legal{max-width:64ch;margin-top:26px;line-height:1.7;}
+  footer.site a{color:#C4CDC4;text-decoration:none;}
+  footer.site a:hover{color:#fff;}
+
+  /* ---------- Reveal on scroll ---------- */
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease;}
+  .reveal.in{opacity:1;transform:none;}
+  @media (prefers-reduced-motion: reduce){
+    .reveal{opacity:1;transform:none;}
   }
 </style>
 </head>
 <body>
 
-<!-- NAVIGATION -->
-<nav>
-  <a href="#" class="nav-brand">RD Abro <span>Legal</span></a>
-  <ul class="nav-links">
-    <li><a href="#practice">Practice</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#process">Process</a></li>
-    <li><a href="#ogc">OGC</a></li>
-    <li><a href="#consult" class="nav-cta">Book Consultation</a></li>
-  </ul>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-lines"></div>
-  <div class="hero-content">
-    <p class="hero-eyebrow">Tax Controversy &amp; Digital Assets · Chicago, Illinois</p>
-    <h1 class="hero-title">
-      The IRS is not<br>
-      <em>always right.</em><br>
-      How you respond<br>matters.
-    </h1>
-    <p class="hero-subtitle">Big Law discipline. Boutique attention. Built for what crypto enforcement has become.</p>
-    <p class="hero-body">
-      The IRS is using blockchain analytics, issuing CP2000 notices at scale, and matching 1099-DA data with increasing precision. This isn't the Wild West anymore. <strong>It requires the kind of disciplined, substantive advocacy that comes from real tax controversy experience — not just crypto familiarity.</strong>
-    </p>
-    <div class="hero-actions">
-      <a href="#consult" class="btn-primary">Book a $500 Consultation</a>
-      <a href="#practice" class="btn-ghost">What I Handle</a>
-    </div>
-    <div class="hero-credentials">
-      <span class="cred-item">Michigan Law J.D.</span>
-      <span class="cred-item">Latham &amp; Watkins</span>
-      <span class="cred-item">Baker &amp; McKenzie</span>
-      <span class="cred-item">Thompson Coburn</span>
-      <span class="cred-item">Seyfarth Shaw</span>
-    </div>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="RD Abro Legal home">
+      <span class="brand-mark">RD&nbsp;Abro&nbsp;<span class="amp">Legal</span></span>
+      <span class="brand-sub">Tax &amp; Business Counsel</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#practice">Practice</a></li>
+      <li><a href="#clients">Clients</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a class="nav-cta" href="#contact">Contact</a></li>
+    </ul>
   </div>
-</section>
+</header>
 
-<!-- URGENCY BANNER -->
-<div class="urgency">
-  <p><strong>Tax season 2026:</strong> CP2000 notices for crypto are surging. You have 60 days from the notice date to respond. <a href="#consult">Don't wait.</a></p>
-</div>
+<main id="top">
 
-<!-- PRACTICE AREAS -->
-<section class="notices reveal" id="practice">
-  <div class="section-eyebrow">Digital Asset Tax Controversy</div>
-  <h2 class="section-title">IRS notices I <em>handle</em></h2>
-  <p style="max-width:620px; color:var(--muted); line-height:1.8; font-weight:300; font-size:0.95rem;">
-    Every notice requires a different strategy. The wrong response — or no response — can lock in a position that's hard to walk back. Here's what I handle.
-  </p>
-
-  <div class="notices-grid">
-    <div class="notice-card">
-      <p class="notice-tag">Most Common</p>
-      <h3 class="notice-name">CP2000<br>Underreporter Notice</h3>
-      <p class="notice-desc">The IRS matched your exchange data against your return and found a discrepancy. Often triggered by 1099-DA gross proceeds reported without cost basis. Most proposed deficiencies are overstated — sometimes dramatically.</p>
-    </div>
-    <div class="notice-card">
-      <p class="notice-tag">Required Response</p>
-      <h3 class="notice-name">Letter 6173</h3>
-      <p class="notice-desc">Unlike informational letters, this one requires a response. You must either file amended returns, provide documentation confirming correct reporting, or explain your position in writing. Ignoring it invites escalation.</p>
-    </div>
-    <div class="notice-card">
-      <p class="notice-tag">Informational Warning</p>
-      <h3 class="notice-name">Letters 6174<br>&amp; 6174-A</h3>
-      <p class="notice-desc">The IRS is telling you they have information about your crypto accounts. No response required — but the underlying compliance issue is real. Receiving one means you're on their radar.</p>
-    </div>
-    <div class="notice-card">
-      <p class="notice-tag">Examination</p>
-      <h3 class="notice-name">IRS Audit —<br>Digital Assets</h3>
-      <p class="notice-desc">A full examination of your digital asset activity. Requires organized documentation, clear legal positions, and an advocate who understands how the IRS evaluates crypto transactions — including DeFi, NFTs, and staking.</p>
-    </div>
-    <div class="notice-card">
-      <p class="notice-tag">Penalty Defense</p>
-      <h3 class="notice-name">Accuracy-Related<br>Penalties</h3>
-      <p class="notice-desc">The IRS proposes a 20% penalty on top of the tax. Most people pay it without questioning it. Reasonable cause, substantial authority, and first-time abatement are all grounds to eliminate it — if you raise them correctly.</p>
-    </div>
-    <div class="notice-card">
-      <p class="notice-tag">Prior Year Exposure</p>
-      <h3 class="notice-name">Voluntary<br>Disclosure</h3>
-      <p class="notice-desc">Unreported crypto from prior years carries real risk. Coming forward proactively — before the IRS finds it — is almost always the better outcome. Attorney-client privilege protects the conversation. A CPA cannot offer that.</p>
-    </div>
-  </div>
-</section>
-
-<!-- WHY RITA -->
-<section class="why reveal" id="about">
-  <div class="section-eyebrow">About Rita D. Abro</div>
-  <h2 class="section-title">Big Law training.<br><em>Boutique focus.</em></h2>
-
-  <div class="why-layout">
-    <div class="why-photo">
-      <!-- Replace src with actual headshot -->
-      <img src="HeadShot.jpg" alt="Rita D. Abro" style="width:100%;height:100%;object-fit:cover;display:block;">
-      <div class="why-photo-caption">
-        <p>"The IRS enforcement landscape has matured. So has the need for advocates who understand it."</p>
+  <!-- ================= HERO ================= -->
+  <section class="hero" style="padding-bottom:0;">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Chicago, Illinois &mdash; Federal Tax Matters Nationwide</p>
+          <h1>Tax counsel for companies, founders, and&nbsp;<em>investors.</em></h1>
+          <p class="hero-sub">RD Abro Legal advises businesses and individuals across the full life of a tax matter &mdash; entity formation, corporate and partnership compliance, M&amp;A structuring, digital assets, and outside general counsel support. Big Law discipline, boutique attention.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#practice">Explore the Practice</a>
+            <a class="btn btn-ghost" href="#about">About Rita</a>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <div class="why-content">
-      <p>
-        I'm a tax controversy attorney, and I'm now taking cryptocurrency cases — <strong>deliberately.</strong>
-      </p>
-      <p>
-        After nearly a decade in Big Law, I've spent my career doing exactly what crypto holders now need most: building and defending positions before the IRS, understanding how examinations are conducted, and knowing what a strong response looks like — and what a weak one costs you.
-      </p>
-      <p>
-        The digital asset enforcement landscape has changed. The IRS is no longer guessing. Taxpayers need advocates who understand both the law and how the IRS builds its cases. <strong>That's the gap I'm filling.</strong>
-      </p>
-      <p>
-        I founded RD Abro Legal in 2018 after my Big Law career, and serve as outside general counsel to financial firms. I am now expanding my practice to digital asset controversy — where institutional-quality advocacy is most needed and least available.
-      </p>
-
-      <div class="pedigree-list">
-        <div class="pedigree-item">
-          <span class="pedigree-firm">Michigan Law, J.D.</span>
-          <span class="pedigree-role">University of Michigan Law School, 2006</span>
-        </div>
-        <div class="pedigree-item">
-          <span class="pedigree-firm">Latham &amp; Watkins LLP</span>
-          <span class="pedigree-role">Associate, M&amp;A and Tax</span>
-        </div>
-        <div class="pedigree-item">
-          <span class="pedigree-firm">Baker &amp; McKenzie LLP</span>
-          <span class="pedigree-role">Associate — Fortune 500 &amp; Fortune 50 tax advisory</span>
-        </div>
-        <div class="pedigree-item">
-          <span class="pedigree-firm">Thompson Coburn LLP</span>
-          <span class="pedigree-role">Lead Tax Controversy Associate</span>
-        </div>
-        <div class="pedigree-item">
-          <span class="pedigree-firm">Seyfarth Shaw LLP</span>
-          <span class="pedigree-role">Senior Tax Associate</span>
-        </div>
-        <div class="pedigree-item">
-          <span class="pedigree-firm">RD Abro Legal LLC</span>
-          <span class="pedigree-role">Founder &amp; Managing Attorney, 2018–Present</span>
+      <div class="creds" aria-label="Credentials">
+        <div class="creds-inner" style="justify-content:flex-start;gap:0 18px;">
+          <span style="color:var(--green-deep);font-weight:600;">University of Michigan</span>
+          <span class="dot" aria-hidden="true" style="color:var(--maize);font-size:14px;">|</span>
+          <span style="color:var(--green-deep);font-weight:600;">Michigan Law</span>
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- ================= PRACTICE ================= -->
+  <section class="practice" id="practice">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">The Practice</p>
+        <h2>One attorney across the full tax life of your business.</h2>
+        <p>From the first operating agreement to the closing table &mdash; and everything the Code requires in between.</p>
+      </div>
+
+      <div class="index">
+
+        <div class="index-row reveal">
+          <div class="index-mark">&sect;&thinsp;1</div>
+          <div class="index-body">
+            <h3>Tax Compliance &amp; Planning</h3>
+            <p>Corporate, partnership, and individual tax compliance for businesses with real complexity &mdash; multi-entity structures, allocations and distributions, international reporting, and year-round planning designed to keep positions defensible if they're ever questioned.</p>
+            <div class="index-tags"><span>Corporate</span><span>Partnership</span><span>International</span></div>
+          </div>
+        </div>
+
+        <div class="index-row reveal">
+          <div class="index-mark">&sect;&thinsp;2</div>
+          <div class="index-body">
+            <h3>M&amp;A &amp; Transaction Tax</h3>
+            <p>Tax structuring for acquisitions, dispositions, and reorganizations &mdash; deal structure analysis, tax due diligence, private equity structures, and purchase agreement tax provisions. Available as lead tax counsel or as co-counsel to your deal team.</p>
+            <div class="index-tags"><span>Deal Structuring</span><span>Due Diligence</span><span>Reorganizations</span></div>
+          </div>
+        </div>
+
+        <div class="index-row reveal">
+          <div class="index-mark">&sect;&thinsp;3</div>
+          <div class="index-body">
+            <h3>Entity Formation &amp; Structuring</h3>
+            <p>LLC formation done with the end in mind &mdash; choice of entity, operating agreements, partnership agreements, and ownership structures built to fit how you'll actually operate, distribute, and eventually exit.</p>
+            <div class="index-tags"><span>LLC Setup</span><span>Operating Agreements</span><span>Choice of Entity</span></div>
+          </div>
+        </div>
+
+        <div class="index-row reveal">
+          <div class="index-mark">&sect;&thinsp;4</div>
+          <div class="index-body">
+            <h3>Digital Assets &amp; Cryptocurrency</h3>
+            <p>Tax counsel for crypto holders, funds, and businesses &mdash; reporting and basis questions, 1099-DA compliance, staking and DeFi income characterization, and voluntary disclosure for prior years. When the IRS comes calling, disciplined enforcement defense backed by real controversy experience.</p>
+            <div class="index-tags"><span>Reporting</span><span>Voluntary Disclosure</span><span>Enforcement Defense</span></div>
+          </div>
+        </div>
+
+        <div class="index-row reveal">
+          <div class="index-mark">&sect;&thinsp;5</div>
+          <div class="index-body">
+            <h3>Outside General Counsel</h3>
+            <p>Ongoing legal support for growing companies that aren't ready for a full-time GC &mdash; contracts, governance, and day-to-day legal judgment from an attorney who already understands your structure and your tax posture.</p>
+            <div class="index-tags"><span>Contracts</span><span>Governance</span><span>Fractional GC</span></div>
+          </div>
+        </div>
+
+        <div class="index-row reveal">
+          <div class="index-mark">&sect;&thinsp;6</div>
+          <div class="index-body">
+            <h3>Tax Controversy &amp; IRS Representation</h3>
+            <p>When a notice arrives, the response matters. Audit defense, penalty abatement, CP2000 responses, and appeals &mdash; built on nearly a decade of constructing and defending tax positions before the IRS.</p>
+            <div class="index-tags"><span>Audits</span><span>Penalty Abatement</span><span>Appeals</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CLIENTS ================= -->
+  <section id="clients">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Who I Work With</p>
+        <h2>Three kinds of clients, one standard of counsel.</h2>
+      </div>
+      <div class="clients-grid reveal">
+        <div class="client-card">
+          <h3>Businesses &amp; Founders</h3>
+          <p>Companies from formation through exit &mdash; entity setup, ongoing compliance, transactions, and outside general counsel support that helps address legal questions before they become disputes.</p>
+        </div>
+        <div class="client-card">
+          <h3>Digital Asset Holders &amp; Companies</h3>
+          <p>Investors, funds, and crypto-native businesses navigating a maturing enforcement landscape &mdash; from getting reporting right the first time to resolving prior years proactively.</p>
+        </div>
+        <div class="client-card">
+          <h3>Law Firms &amp; Advisors</h3>
+          <p>Tax co-counsel for firms that need senior transaction tax experience on call &mdash; private equity structures, M&amp;A planning, corporate reorganizations, and international compliance &mdash; without the overhead of a full-time hire.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="reveal">
+          <p class="eyebrow">About</p>
+          <h2>Rita D. Abro, <em>Attorney at Law</em></h2>
+          <p>After nearly a decade in Big Law, I built RD Abro Legal to give companies and individuals the kind of tax counsel usually reserved for institutional clients &mdash; without the institutional overhead.</p>
+          <p>My career has been spent structuring and defending tax positions: building entities and transactions the right way from the start, keeping compliance defensible year over year, and, when necessary, standing between clients and the IRS. That range &mdash; planning, transactions, and controversy under one roof &mdash; means advice that accounts for how positions are actually examined, not just how they read on paper.</p>
+          <blockquote>
+            &ldquo;The best tax position is one that never needs defending &mdash; but is built as if it will.&rdquo;
+            <footer>Rita D. Abro</footer>
+          </blockquote>
+        </div>
+        <div class="reveal">
+          <dl class="about-facts">
+            <div class="fact"><dt>Education</dt><dd>University of Michigan Law School, J.D. &middot; University of Michigan &mdash; a proud double Wolverine</dd></div>
+            <div class="fact"><dt>Experience</dt><dd>Latham &amp; Watkins &middot; Baker &amp; McKenzie &middot; Thompson Coburn &middot; Seyfarth Shaw</dd></div>
+            <div class="fact"><dt>Focus</dt><dd>Tax compliance &amp; planning, M&amp;A and transaction tax, entity structuring, digital assets, outside general counsel, tax controversy</dd></div>
+            <div class="fact"><dt>Admitted</dt><dd>Licensed in Illinois</dd></div>
+            <div class="fact"><dt>Location</dt><dd>Chicago &mdash; federal tax matters handled nationwide; remote meetings available</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-grid" style="grid-template-columns:1fr;max-width:720px;">
+        <div class="reveal">
+          <p class="eyebrow">By Referral</p>
+          <h2 style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(30px,4vw,44px);line-height:1.12;color:var(--green-deep);margin-top:20px;letter-spacing:-.01em;">Most of my clients arrive by referral.</h2>
+          <p class="contact-note" style="max-width:56ch;">If we already know each other, you know how to reach me. If we don't yet, chances are someone we both know can make the introduction &mdash; that's how this practice was built, and how it works best.</p>
+          <div class="contact-meta">
+            <div><strong>Office</strong>46 Village Pl., Hinsdale, Illinois &mdash; meetings available remotely</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">RD Abro Legal LLC</div>
+        <p style="margin-top:6px;">Tax &amp; Business Counsel &mdash; Chicago, Illinois</p>
+      </div>
+      <div style="text-align:right;">
+        <p><a href="#practice">Practice</a> &nbsp;&middot;&nbsp; <a href="#about">About</a> &nbsp;&middot;&nbsp; <a href="#contact">Contact</a></p>
+      </div>
+    </div>
+    <p class="foot-legal">Attorney Advertising. The information on this website is for general informational purposes only and does not constitute legal advice, and is not a substitute for advice regarding your specific situation. Viewing this site or contacting RD Abro Legal LLC does not create an attorney&#8209;client relationship. Prior results do not guarantee a similar outcome. Rita D. Abro is licensed to practice law in Illinois; services involving the law of other states are not offered. Representation in federal tax matters, including before the Internal Revenue Service, is available to clients nationwide. Attorney responsible for the content of this website: Rita D. Abro, RD Abro Legal LLC, 46 Village Pl., Hinsdale, Illinois. &copy; 2026 RD Abro Legal LLC. All rights reserved.</p>
   </div>
-</section>
-
-<!-- QUOTE -->
-<div class="quote-section reveal">
-  <p class="quote-text">"Once you respond to the IRS, that response is on the record. Your first position becomes your position. Know what you're dealing with before you write a single word."</p>
-  <p class="quote-attr">— Rita D. Abro, RD Abro Legal LLC</p>
-</div>
-
-<!-- HOW IT WORKS -->
-<section class="process reveal" id="process">
-  <div class="section-eyebrow" style="color:var(--gold-light);">How It Works</div>
-  <h2 class="section-title">From notice to <em>resolution</em></h2>
-
-  <div class="process-steps">
-    <div class="process-step">
-      <div class="step-number">01</div>
-      <p class="step-title">Initial Consultation</p>
-      <p class="step-desc">$500 flat fee. We review your notice, assess the IRS's position, analyze your records, and tell you exactly what kind of response your situation requires — and whether you need representation to do it.</p>
-    </div>
-    <div class="process-step">
-      <div class="step-number">02</div>
-      <p class="step-title">Records &amp; Analysis</p>
-      <p class="step-desc">We gather your exchange records, transaction history, cost basis documentation, and any prior filings. The strength of your defense is directly proportional to the quality of your documentation.</p>
-    </div>
-    <div class="process-step">
-      <div class="step-number">03</div>
-      <p class="step-title">Build the Response</p>
-      <p class="step-desc">We prepare a substantive written response addressing each element of the IRS's proposed adjustment — basis corrections, non-taxable transfer exclusions, penalty abatement, and corrected calculations.</p>
-    </div>
-    <div class="process-step">
-      <div class="step-number">04</div>
-      <p class="step-title">Submit &amp; Advocate</p>
-      <p class="step-desc">We submit the response on your behalf and manage all IRS communication. If the matter requires escalation to Appeals or Tax Court, we continue the representation at every stage.</p>
-    </div>
-  </div>
-</section>
-
-<!-- OGC -->
-<section class="ogc reveal" id="ogc">
-  <div class="section-eyebrow">Outside General Counsel</div>
-  <h2 class="section-title">Institutional counsel.<br><em>Without the overhead.</em></h2>
-
-  <div class="ogc-grid">
-    <div class="ogc-text">
-      <p>
-        Since 2018, I have served as retained outside general counsel to financial firms that need Big Law expertise without Big Law billing rates or institutional conflicts.
-      </p>
-      <p>
-        I also serve as tax co-counsel to law firms requiring specialized expertise on complex transactions — private equity structures, M&amp;A tax planning, corporate reorganizations, and international tax compliance.
-      </p>
-      <p>
-        If your firm needs a senior attorney on call without the overhead of a full-time hire, that's exactly what I built this practice to provide.
-      </p>
-      <a href="#consult" class="btn-primary" style="margin-top:1rem; display:inline-block;">Discuss a Retainer</a>
-    </div>
-
-    <div class="ogc-services">
-      <div class="ogc-service">Regulatory Compliance</div>
-      <div class="ogc-service">Corporate Governance</div>
-      <div class="ogc-service">M&amp;A Tax Planning</div>
-      <div class="ogc-service">PE Fund Structures</div>
-      <div class="ogc-service">Corporate Reorganizations</div>
-      <div class="ogc-service">International Tax</div>
-      <div class="ogc-service">Transaction Advisory</div>
-      <div class="ogc-service">Tax Co-Counsel</div>
-    </div>
-  </div>
-</section>
-
-<!-- CONSULTATION CTA -->
-<section class="consult reveal" id="consult">
-  <div class="section-eyebrow" style="justify-content:center; color:var(--gold-light);">Book a Consultation</div>
-  <h2 class="section-title">Before you write a single<br>word to the <em>IRS.</em></h2>
-  <p>A $500 flat-fee consultation tells you exactly where you stand — what the IRS is actually alleging, what your records need to show, and what kind of response your notice requires.</p>
-  <div class="consult-fee">$500 · 30-Minute Flat-Fee Consultation · Chicago / Remote</div>
-  <br>
-  <a href="[YOUR CALENDLY LINK]" class="btn-primary">Schedule Now</a>
-  &nbsp;&nbsp;
-  <a href="mailto:[YOUR EMAIL]" class="btn-ghost" style="margin-top:0.5rem; display:inline-block;">Send a Message</a>
-
-  <p style="margin-top:3rem; font-size:0.72rem; color:rgba(248,245,239,0.3); letter-spacing:0.08em; text-transform:uppercase;">
-    Attorney-Client Privilege applies from the first conversation.<br>
-    Licensed in Illinois · RD Abro Legal LLC · Chicago
-  </p>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-brand">RD Abro <span>Legal</span> LLC</div>
-  <div class="footer-mid">
-    Michigan Law · Latham &amp; Watkins · Baker &amp; McKenzie<br>
-    Thompson Coburn · Seyfarth Shaw
-  </div>
-  <div class="footer-contact">
-    <a href="mailto:[YOUR EMAIL]">[your email]</a>
-    <a href="[YOUR CALENDLY]">Book Consultation →</a>
-  </div>
-  <p class="footer-disclaimer">
-    © 2026 RD Abro Legal LLC · All Rights Reserved · Licensed in Illinois<br>
-    This website is for informational purposes only and does not constitute legal advice. Viewing this site does not create an attorney-client relationship.<br>
-    Attorney Advertising. Prior results do not guarantee similar outcomes.
-  </p>
 </footer>
 
 <script>
-  // Scroll reveal
-  const reveals = document.querySelectorAll('.reveal');
+  // Scroll-triggered reveals (skipped for reduced-motion users via CSS)
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.1 });
-  reveals.forEach(el => observer.observe(el));
-
-  // Smooth nav highlight
-  const sections = document.querySelectorAll('section[id]');
-  window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-    sections.forEach(section => {
-      if (scrollY >= section.offsetTop - 100) {
-        document.querySelectorAll('.nav-links a').forEach(a => {
-          a.style.color = '';
-        });
-        const activeLink = document.querySelector(`.nav-links a[href="#${section.id}"]`);
-        if (activeLink) activeLink.style.color = 'var(--gold-light)';
-      }
-    });
-  });
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 </script>
+
 </body>
 </html>
